@@ -46,13 +46,13 @@ class SignupForm extends Component {
         <div>
             <h2>I'm sign up form</h2>
             <div>
-               <input type='text' onChange={e => onNameUpdate(e.target.value)} value={name} placeholder='Your name'/>
+               <input type='text' onChange={e => onNameUpdate(e.target.value)} value={state.name} placeholder='Your name'/>
             </div>
             <div>
-                <input type='email' onChange={e => onEmailUpdate(e.target.value)} value={email} placeholder='Your email'/>  
+                <input type='email' onChange={e => onEmailUpdate(e.target.value)} value={state.email} placeholder='Your email'/>  
             </div>
             <div>
-            <input type='password' onChange={e => onPasswordUpdate(e.target.value)} value={password} placeholder='Your password'/>  
+            <input type='password' onChange={e => onPasswordUpdate(e.target.value)} value={state.password} placeholder='Your password'/>  
             </div>
             <div>
                <button type='button' onClick={ () => { 
